@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Vorze-PlayerHelper")]
+[assembly: AssemblyTitle("Vorze-PlayerHelper-W")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Vorze-PlayerHelper")]
+[assembly: AssemblyProduct("Vorze-PlayerHelper-W")]
 [assembly: AssemblyCopyright("Copyright Net005 ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.1.4")]
-[assembly: AssemblyFileVersion("0.0.1.4")]
+[assembly: AssemblyVersion("0.0.1.5")]
+[assembly: AssemblyFileVersion("0.0.1.5")]

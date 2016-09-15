@@ -251,7 +251,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Vorze - Player helper  ( Version: 0.14 )";
+            this.Text = "Vorze - Player helper W  ( Version: 0.15 )";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.gbZPlayer.ResumeLayout(false);
