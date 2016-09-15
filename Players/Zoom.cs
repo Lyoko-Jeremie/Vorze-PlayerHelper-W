@@ -35,8 +35,10 @@ namespace Vorze_PlayerHelper.Players
             tb.Text = global::Vorze_PlayerHelper.Properties.Settings.Default.ZplayerPORT;
         }
 
-        public void playerInformationRetrieval(string playerIP, int playerPort, ref PlayerStatus playerStatus, Action<string, bool> logger, Action<string> processCSV)
+        public void playerInformationRetrieval(ref PlayerStatus playerStatus, Action<string, bool> logger, Action<string> processCSV)
         {
+            string playerIP = Properties.Settings.Default.ZplayerIP;
+            int playerPort = int.Parse(Properties.Settings.Default.ZplayerPORT);
             while (playerStatus.vorzeIsEnabled)
             {
                 try

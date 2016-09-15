@@ -37,10 +37,12 @@ namespace Vorze_PlayerHelper.Players
             tb.Text = global::Vorze_PlayerHelper.Properties.Settings.Default.WhirligigPORT;
         }
 
-        public void playerInformationRetrieval(string playerIP, int playerPort, ref PlayerStatus playerStatus, Action<string, bool> logger, Action<string> processCSV)
+        public void playerInformationRetrieval(ref PlayerStatus playerStatus, Action<string, bool> logger, Action<string> processCSV)
         {
             Socket MainSock = null;
             int i;
+            string playerIP = Properties.Settings.Default.WhirligigIP;
+            int playerPort = int.Parse(Properties.Settings.Default.WhirligigPORT);
 
             while (playerStatus.vorzeIsEnabled)
             {
@@ -131,7 +133,7 @@ namespace Vorze_PlayerHelper.Players
                         playerStatus.playerInactive = false;
                     }
 
-                    playerStatus.currentPlayPositionMovie = (int)(time * 1000);
+                    playerStatus.currentPlayPositionMovie = (int)(time * 10);
                 }
             }
             else

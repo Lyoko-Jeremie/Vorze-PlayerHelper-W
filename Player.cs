@@ -8,6 +8,6 @@ namespace Vorze_PlayerHelper
         void SetupInstructionLabel(Label lbl);
         void SetupTextboxIP(TextBox tb);
         void SetupTextboxPORT(TextBox tb);
-        void playerInformationRetrieval(string playerIP, int playerPort, ref PlayerStatus playerStatus, System.Action<string, bool> logger, System.Action<string> processCSV);
+        void playerInformationRetrieval(ref PlayerStatus playerStatus, System.Action<string, bool> logger, System.Action<string> processCSV);
     }
 }

@@ -15,10 +15,6 @@
 
     public class VorzeHelper
     {
-        // ZOOM PLAYER
-        private static string playerIP = Properties.Settings.Default.ZplayerIP;
-        private static int playerPort = int.Parse(Properties.Settings.Default.ZplayerPORT);
-
         // PLAYER STATUS
         private static PlayerStatus playerStatus = new PlayerStatus();
         private static string currentlyActiveCSV;
@@ -88,7 +84,7 @@
             playerStatus.playerInactive = false;
             playerStatus.playerWasInactive = false;
 
-            Thread t = new Thread(() => theForm.thePlayer.playerInformationRetrieval(playerIP, playerPort, ref playerStatus, logger, processCSV));
+            Thread t = new Thread(() => theForm.thePlayer.playerInformationRetrieval(ref playerStatus, logger, processCSV));
             t.IsBackground = true;
             t.Start();
 
