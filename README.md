@@ -1,9 +1,9 @@
-# Vorze-PlayerHelper
+# Vorze-PlayerHelper-W
+I created this version so I could use it with Whirligig, it seems to work although I haven't done any "real" testing yet (I was stabbing in the dark on the Socket stuff).  The zoom version has not been tested - the logic was ported into a separate class.
+
 Allows control of VORZE Cyclone SA via external players
 
-Currently only Zoom Player is supported as that has an easy to use Control API over network, others can be supported upon request so long as they have the ability to read playback positions and status either locally or over network.
-
-This version is still in the BETA phase as it needs better debug logging and perhaps some performance improvements, however it's fully functional already.
+Supports Whirligig and Zoom Player.
 
 The Vorze brand and the SA product listed here are the property of RENDS Co.,Ltd.
 
@@ -13,11 +13,17 @@ This program merely expands their limited video player capabilities, this is for
 
 Zoom Player  - http://www.inmatrix.com/zplayer/
 
+Whirligig - http://www.whirligig.xyz/
+
 Microsoft .NET framework 4.5.2  - http://www.microsoft.com/en-us/download/details.aspx?id=42642
 
 Vorze Player Helper - https://github.com/Net005/Vorze-PlayerHelper/releases
 
-# HOWTO
+# HOWTO - Whirligig
+
+Enable TimeCodeServer option - http://www.whirligig.xyz/blog/2016/1/24/timecodeserver-re-emerges
+
+# HOWTO - Zoom Player
 
 ##### Step 1 - Enable Control API in Zoom Player setings
 
